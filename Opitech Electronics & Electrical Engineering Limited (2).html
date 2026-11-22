@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opitech Electronics & Electrical Engineering Limited | Lagos, Nigeria</title>
+    <meta name="description" content="Reliable, Professional & Affordable Electrical Engineering, Industrial Wiring, Solar & Inverter Installations, and Wireless CCTV in Alimosho, Lagos. RC-1865509.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for crisp engineering & UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#132238',
+                            900: '#0A1628',
+                            950: '#060D18',
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-navy-950">
+
+    <!-- Top Status & Emergency Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Open Daily • Closes 10:00 PM
+                </span>
+                <span class="hidden md:inline text-slate-500">|</span>
+                <span class="hidden md:inline text-slate-300">
+                    <i class="fa-solid fa-certificate text-amber-400 mr-1"></i> CAC Registered: <strong class="text-white">RC-1865509</strong>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-amber-400 font-semibold">
+                    <i class="fa-solid fa-bolt mr-1"></i> 24/7 Emergency Electrical & Solar Support
+                </span>
+                <a href="https://www.tiktok.com/@opitechelectrical" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i class="fa-brands fa-tiktok"></i> @opitechelectrical
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-navy-950 shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-bolt-lightning text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-extrabold text-lg sm:text-xl tracking-tight leading-none">OPITECH</span>
+                        <span class="text-[10px] sm:text-xs text-amber-400 font-semibold tracking-wider uppercase mt-1">Electronics & Electrical Eng. Ltd</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+                    <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                    <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                    <a href="#solar-calculator" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-solar-panel text-amber-400 text-xs"></i> Solar Estimator
+                    </a>
+                    <a href="#about" class="hover:text-amber-400 transition-colors">About & CAC</a>
+                    <a href="#reviews" class="hover:text-amber-400 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">Contact & Quote</a>
+                </nav>
+
+                <!-- CTA & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:08122263711" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl shadow-md hover:shadow-amber-500/25 transition-all">
+                        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                        <span>Call 24/7</span>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 transition-colors">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2">
+            <a href="#home" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">Home</a>
+            <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">Engineering Services</a>
+            <a href="#solar-calculator" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">Solar & Inverter Calculator</a>
+            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">About & Credentials</a>
+            <a href="#reviews" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">Client Reviews (5.0 ★)</a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-navy-800 hover:text-amber-400 font-medium">Contact & Free Quote</a>
+            <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+                <a href="tel:08022236711" class="w-full text-center py-3 rounded-xl bg-navy-800 text-white font-semibold text-sm border border-slate-700">
+                    <i class="fa-solid fa-phone mr-2 text-amber-400"></i> Call Primary: 0802 223 6711
+                </a>
+                <a href="https://wa.me/2348122263711" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp 24/7: 0812 226 3711
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="relative bg-navy-900 text-white overflow-hidden">
+        <!-- Subtle Technical Grid Pattern Overlay -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#F59E0B 1px, transparent 1px); background-size: 28px 28px;"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Copy & Actions -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800 border border-slate-700 text-amber-400 text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Reliable • Professional • Affordable | Available 24/7</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Expert <span class="text-amber-400">Electrical Engineering</span>, Solar & Smart Security in Lagos.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                        From heavy-duty industrial wiring and commercial distribution boards to hybrid solar inverter systems and wireless CCTV surveillance—<strong class="text-white">Opitech Electronics and Electrical Engineering Limited</strong> delivers certified, high-precision power solutions across Alimosho and greater Lagos.
+                    </p>
+
+                    <!-- Primary Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold px-7 py-4 rounded-2xl shadow-lg shadow-amber-500/20 transition-all text-base">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <span>Request a Free Quote</span>
+                        </a>
+                        <a href="tel:08022236711" class="inline-flex items-center justify-center gap-2.5 bg-navy-800 hover:bg-slate-800 text-white border border-slate-700 font-bold px-7 py-4 rounded-2xl transition-all text-base">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <span>Call Now: 0802 223 6711</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-800">
+                        <div class="flex items-center gap-3 bg-navy-800/70 border border-slate-700/70 p-3.5 rounded-2xl">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-building-shield text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">CAC Incorporated</div>
+                                <div class="text-sm font-bold text-white">RC-1865509</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-navy-800/70 border border-slate-700/70 p-3.5 rounded-2xl">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-star text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Google Business</div>
+                                <div class="text-sm font-bold text-white">5.0 ★ Top Rated</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-navy-800/70 border border-slate-700/70 p-3.5 rounded-2xl">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Rapid Response</div>
+                                <div class="text-sm font-bold text-white">24/7 Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Engineering Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-800/90 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-6">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Lagos Field Dispatch</span>
+                                <h2 class="text-lg font-bold text-white mt-0.5">Quick Service Booking</h2>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold">
+                                Alimosho & Lagos
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-2xl bg-navy-900/90 border border-slate-700/80 flex items-start gap-3.5">
+                                <i class="fa-solid fa-solar-panel text-amber-400 text-xl mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">24/7 Uninterrupted Solar Power</h3>
+                                    <p class="text-xs text-slate-400 mt-1">Custom Lithium & Tubular inverter setups engineered for Nigerian grid & generator integration.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-navy-900/90 border border-slate-700/80 flex items-start gap-3.5">
+                                <i class="fa-solid fa-industry text-amber-400 text-xl mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">Industrial & Domestic Wiring</h3>
+                                    <p class="text-xs text-slate-400 mt-1">Safe conduit piping, 3-phase distribution panels, earthing protection & fault diagnostics.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-navy-900/90 border border-slate-700/80 flex items-start gap-3.5">
+                                <i class="fa-solid fa-video text-amber-400 text-xl mt-1"></i>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">Wireless CCTV & Remote Access</h3>
+                                    <p class="text-xs text-slate-400 mt-1">Monitor your home, shop, or factory live from your smartphone anywhere in the world.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-slate-700 flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/2348122263711?text=Hello%20Opitech%20Engineering%2C%20I%20would%20like%20to%20inquire%20about%20an%20electrical%2Fsolar%20project." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3.5 px-4 rounded-xl transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+                            <a href="#solar-calculator" class="flex-1 inline-flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-white font-semibold text-sm py-3.5 px-4 rounded-xl transition-colors">
+                                <i class="fa-solid fa-calculator text-amber-400"></i>
+                                <span>Size Your Solar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Showcase -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest">Our Core Competencies</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Comprehensive Electrical & Electronics Solutions</h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Engineered to strict safety standards for residential estates, commercial plazas, warehouses, and industrial facilities across Lagos.
+                </p>
+            </div>
+
+            <!-- Interactive Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1: Industrial & Residential Wiring -->
+                <div class="group bg-slate-50 border border-slate-200 hover:border-amber-500 rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-plug-circle-bolt"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-800">Conduit & Surface</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-navy-900 mb-3">Industrial & Residential Wiring</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Complete electrical infrastructure for new builds, renovations, factories, and offices. We ensure balanced load distribution, surge protection, and zero fire-hazard cabling.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Full Conduit & Surface Wiring Installations</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Commercial 3-Phase Distribution Boards & Changeovers</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Earth Pit Construction & Short-Circuit Troubleshooting</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-3">
+                        <button onclick="openServiceModal('wiring')" class="text-navy-900 hover:text-amber-600 font-bold text-sm inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Technical Scope</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="selectServiceForQuote('Industrial & Residential Wiring')" class="px-4 py-2 rounded-xl bg-navy-900 hover:bg-amber-500 hover:text-navy-950 text-white text-xs font-bold transition-colors">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Solar & Inverter Installations -->
+                <div class="group bg-slate-50 border border-slate-200 hover:border-amber-500 rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-solar-panel"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-800">24/7 Clean Power</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-navy-900 mb-3">Solar & Inverter Installations</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Beat fuel costs and grid outages with high-efficiency hybrid solar energy systems tailored to your exact daily energy consumption and roof geometry.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Hybrid MPPT Inverters (1.5kVA to 50kVA+)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> LiFePO4 Lithium & Deep-Cycle Tubular Battery Banks</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Comprehensive Energy Audits & Panel Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-3">
+                        <button onclick="openServiceModal('solar')" class="text-navy-900 hover:text-amber-600 font-bold text-sm inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Technical Scope</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="selectServiceForQuote('Solar & Inverter Installations')" class="px-4 py-2 rounded-xl bg-navy-900 hover:bg-amber-500 hover:text-navy-950 text-white text-xs font-bold transition-colors">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Wireless CCTV & Security Systems -->
+                <div class="group bg-slate-50 border border-slate-200 hover:border-amber-500 rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-shield-cat"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-100 text-blue-800">Smart Surveillance</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-navy-900 mb-3">Wireless CCTV & Security Systems</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Protect your family, inventory, and premises round the clock with crystal-clear night-vision cameras, solar-powered outdoor cameras, and mobile alerts.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> HD Wireless Wi-Fi & 4G Solar PTZ Cameras</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Live iOS & Android Remote Mobile Viewing Setup</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Motion Detection Alerts & Perimeter Security Lighting</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-3">
+                        <button onclick="openServiceModal('cctv')" class="text-navy-900 hover:text-amber-600 font-bold text-sm inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Technical Scope</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="selectServiceForQuote('Wireless CCTV & Security Systems')" class="px-4 py-2 rounded-xl bg-navy-900 hover:bg-amber-500 hover:text-navy-950 text-white text-xs font-bold transition-colors">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: Electrical & Electronics Engineering -->
+                <div class="group bg-slate-50 border border-slate-200 hover:border-amber-500 rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-200 text-slate-800">Contracts & Supply</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-navy-900 mb-3">Electrical & Electronics Engineering</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                            Registered corporate contractor for electrical equipment servicing, preventative facility maintenance, electronic diagnostics, and genuine material procurement.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Industrial & Commercial Equipment Servicing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> General Electrical Contracts & Facility Retainers</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-500"></i> Supply of Certified Cables, Breakers & Solar Gear</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-3">
+                        <button onclick="openServiceModal('engineering')" class="text-navy-900 hover:text-amber-600 font-bold text-sm inline-flex items-center gap-1.5 transition-colors">
+                            <span>View Technical Scope</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="selectServiceForQuote('Electrical & Electronics Engineering Contracts')" class="px-4 py-2 rounded-xl bg-navy-900 hover:bg-amber-500 hover:text-navy-950 text-white text-xs font-bold transition-colors">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Interactive Solar & Inverter Load Estimator Tool -->
+    <section id="solar-calculator" class="py-20 bg-navy-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-calculator"></i> Interactive Engineering Tool
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Lagos Solar & Inverter Load Estimator</h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base">
+                    Adjust the quantity of appliances you want to power during NEPA/grid outages to calculate your running wattage and recommended Opitech inverter & solar package.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Appliance Controls (7 Columns) -->
+                <div class="lg:col-span-7 bg-navy-800 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-6">
+                        <h3 class="font-bold text-lg text-white">Select Your Home / Office Appliances</h3>
+                        <button onclick="resetCalculator()" class="text-xs font-semibold text-amber-400 hover:text-amber-300 underline">
+                            Reset All
+                        </button>
+                    </div>
+
+                    <div id="appliance-list" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+
+                <!-- Live Calculation Result Card (5 Columns) -->
+                <div class="lg:col-span-5 bg-gradient-to-b from-navy-800 to-navy-950 border-2 border-amber-500/60 rounded-3xl p-6 sm:p-8 shadow-2xl sticky top-24">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">System Recommendation</span>
+                        <i class="fa-solid fa-bolt text-amber-400 text-xl"></i>
+                    </div>
+
+                    <div class="bg-navy-900/90 border border-slate-700 rounded-2xl p-5 mb-5">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-sm text-slate-400">Estimated Running Load:</span>
+                            <span id="total-watts" class="text-3xl font-black text-white">0 W</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full mt-3 overflow-hidden">
+                            <div id="load-bar" class="bg-amber-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                        <p class="text-[11px] text-slate-400 mt-2">Includes 25% engineering safety surge headroom.</p>
+                    </div>
+
+                    <div class="space-y-3.5 mb-6">
+                        <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30">
+                            <div class="text-xs text-amber-300 font-semibold uppercase">Recommended Inverter Size</div>
+                            <div id="rec-inverter" class="text-xl sm:text-2xl font-extrabold text-amber-400 mt-0.5">Select appliances to begin</div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-navy-900 border border-slate-700">
+                            <div class="text-xs text-slate-400 font-semibold uppercase">Suggested Battery & Solar Array</div>
+                            <div id="rec-solar" class="text-sm font-bold text-white mt-1">Awaiting load selection...</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <button onclick="sendEstimateToWhatsApp()" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-5 rounded-xl shadow-lg transition-all text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Send Estimate to Opitech WhatsApp</span>
+                        </button>
+                        <button onclick="transferEstimateToForm()" class="w-full inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3.5 px-5 rounded-xl transition-all text-sm">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span>Pre-Fill Quote Request Form</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. About & Credentials Section -->
+    <section id="about" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest">Verified Nigerian Engineering Firm</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">
+                        Built on Integrity, Precision & Nigerian Electrical Safety Standards.
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>Opitech Electronics and Electrical Engineering Limited</strong> is a duly incorporated Nigerian private company limited by shares (<strong>RC-1865509</strong>), established on November 23, 2021. Headquartered at Alake Bus Stop along Ikotun–Idimu Road in Alimosho, Lagos, we serve homeowners, landlords, SMEs, and industrial plants with dependable electrical craftsmanship.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Under the leadership of Director <strong>Alausa Ismail Opeyemi</strong>, our engineering team combines deep technical diagnostics with genuine copper cabling, high-efficiency solar components, and transparent pricing—backed by 24/7 emergency response across Lagos State.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="text-xs text-slate-500 font-semibold">Corporate Registration</div>
+                            <div class="text-base font-extrabold text-navy-900 mt-1">CAC RC-1865509</div>
+                            <div class="text-xs text-emerald-600 font-medium mt-0.5">Inc. Nov 23, 2021</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="text-xs text-slate-500 font-semibold">Principal Officer</div>
+                            <div class="text-base font-extrabold text-navy-900 mt-1">Alausa Ismail Opeyemi</div>
+                            <div class="text-xs text-slate-500 font-medium mt-0.5">Company Director</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us Grid -->
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Certified & Accountable</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Fully registered limited liability company (RC-1865509) capable of executing both private residential jobs and formal corporate contracts.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 rounded-2xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">24/7 Rapid Dispatch</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Electrical faults don't wait for morning. Our technicians are reachable 24/7 on 0812 226 3711 for urgent troubleshooting across Alimosho and Lagos.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Transparent & Affordable</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Honest bill of quantities (BOQ) with zero hidden charges. We help you select durable materials that fit your budget without compromising safety.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="font-bold text-navy-900 text-lg mb-2">Neat Workmanship</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Clean cable trunking, labeled distribution boards, and neatly mounted solar arrays that boost the safety and value of your property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Customer Reviews & Social Proof -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3">
+                        <i class="fa-brands fa-google"></i> Verified Google Business Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900">Trusted by Lagos Homeowners & Businesses</h2>
+                </div>
+
+                <!-- 5.0 Star Badge Card -->
+                <div class="bg-navy-900 text-white px-6 py-4 rounded-2xl flex items-center gap-4 shadow-lg">
+                    <div class="text-3xl font-black text-amber-400">5.0</div>
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-slate-300 mt-0.5">Google Business Rating • Alimosho, Lagos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Opitech handled the full conduit wiring and 5kVA hybrid solar installation for our duplex in Idimu. Very neat distribution board dressing and our inverter runs silently through the night."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-navy-900 text-amber-400 font-bold flex items-center justify-center text-sm">AO</div>
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">Adebayo O.</div>
+                            <div class="text-xs text-slate-500">Homeowner, Idimu-Ikotun</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "We called them at 9 PM when a phase fault shut down our cold-room plaza near Alake Bus Stop. Engineer Ismail and his team arrived promptly, traced the burnt armored cable, and restored power safely."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-navy-900 text-amber-400 font-bold flex items-center justify-center text-sm">CN</div>
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">Chinedu N.</div>
+                            <div class="text-xs text-slate-500">Commercial Plaza Manager, Alimosho</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Installed 6 wireless solar CCTV cameras around our warehouse. I can view every angle clearly on my phone from anywhere in Lagos. Reliable, professional, and very fair pricing."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-navy-900 text-amber-400 font-bold flex items-center justify-center text-sm">FB</div>
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">Folake B.</div>
+                            <div class="text-xs text-slate-500">Business Owner, Egbeda-Lagos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social & Google Review Actions -->
+            <div class="bg-slate-100 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-extrabold text-navy-900">See Our Live Installations & Field Work</h3>
+                    <p class="text-sm text-slate-600 mt-1">Watch real-time solar setups, distribution board wiring, and CCTV demos on our official TikTok or leave us a Google review.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3 shrink-0">
+                    <a href="https://www.tiktok.com/@opitechelectrical" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy-900 hover:bg-slate-800 text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors">
+                        <i class="fa-brands fa-tiktok text-amber-400"></i>
+                        <span>Follow @opitechelectrical</span>
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=OPITECH+ELECTRONICS+AND+ELECTRICAL+ENGINEERING+130+Ikotun+-+Idimu+Rd+Alimosho+Lagos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-amber-50 text-navy-900 border border-slate-300 font-bold text-sm px-5 py-3 rounded-xl transition-colors">
+                        <i class="fa-brands fa-google text-amber-500"></i>
+                        <span>View / Leave Google Review</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Location & Contact Section -->
+    <section id="contact" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest">Get In Touch 24/7</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Request a Free Engineering Quote or Site Inspection</h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Visit our office in Alimosho, call our 24/7 dispatch lines, or send your project details directly to our WhatsApp.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left Column: Interactive Quote Form (7 Columns) -->
+                <div class="lg:col-span-7 bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg">
+                    <h3 class="text-xl font-extrabold text-navy-900 mb-6 flex items-center gap-2.5">
+                        <i class="fa-solid fa-clipboard-list text-amber-500"></i>
+                        <span>Project & Quote Inquiry Form</span>
+                    </h3>
+
+                    <form id="quote-form" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="client-name" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Full Name / Company *</label>
+                                <input type="text" id="client-name" required placeholder="e.g. Mr. Tunde Adeyemi" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label for="client-phone" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Phone / WhatsApp Number *</label>
+                                <input type="tel" id="client-phone" required placeholder="e.g. 0803 000 0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="client-service" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Service Required *</label>
+                                <select id="client-service" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm bg-white">
+                                    <option value="Solar & Inverter Installations">Solar & Inverter Installations</option>
+                                    <option value="Industrial & Residential Wiring">Industrial & Residential Wiring</option>
+                                    <option value="Wireless CCTV & Security Systems">Wireless CCTV & Security Systems</option>
+                                    <option value="Electrical & Electronics Engineering Contracts">Electrical & Electronics Engineering</option>
+                                    <option value="24/7 Emergency Fault Repair">24/7 Emergency Fault Repair</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="client-location" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Site Location in Lagos *</label>
+                                <input type="text" id="client-location" required placeholder="e.g. Idimu, Ikotun, Egbeda, Ikeja..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="client-details" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Project Description / Load Estimate</label>
+                            <textarea id="client-details" rows="4" placeholder="Tell us about your building type, appliances to power, or electrical issue..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                            <button type="submit" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all text-sm">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Send Instantly via WhatsApp</span>
+                            </button>
+                            <button type="button" onclick="submitStandardForm()" class="flex-1 inline-flex items-center justify-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all text-sm">
+                                <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                                <span>Log Callback Request</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Custom Non-Alert Status Notification Box -->
+                    <div id="form-feedback" class="hidden mt-5 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+                        <div id="form-feedback-text"></div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Office Details & Google Map Card (5 Columns) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- Contact Details Card -->
+                    <div class="bg-navy-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-5">
+                        <h3 class="text-lg font-extrabold text-amber-400 border-b border-slate-800 pb-3">Direct Office & Dispatch Contacts</h3>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-navy-800 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Head Office Address</div>
+                                <p class="text-sm text-white font-medium mt-0.5 leading-relaxed">
+                                    Alake Bus Stop, 130 Ikotun - Idimu Rd, Alimosho, Lagos 102213, Nigeria
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-navy-800 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Direct Telephone Lines</div>
+                                <div class="flex flex-col gap-1 mt-1">
+                                    <a href="tel:08022236711" class="text-base font-bold text-white hover:text-amber-400 transition-colors">
+                                        0802 223 6711 <span class="text-xs font-normal text-slate-400">(Primary Office)</span>
+                                    </a>
+                                    <a href="tel:08122263711" class="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors">
+                                        0812 226 3711 <span class="text-xs font-normal text-slate-400">(24/7 Emergency & WhatsApp)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-navy-800 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Operating Hours</div>
+                                <p class="text-sm text-white font-medium mt-0.5">
+                                    Open Daily • Closes 10:00 PM
+                                </p>
+                                <p class="text-xs text-emerald-400 mt-0.5">
+                                    24/7 Emergency Electrical & Solar Support Available
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Embed & Directions Card -->
+                    <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-md">
+                        <div class="w-full h-56 bg-slate-200 relative">
+                            <iframe
+                                title="Opitech Electronics and Electrical Engineering Location Map"
+                                class="w-full h-full border-0"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://maps.google.com/maps?q=130%20Ikotun%20-%20Idimu%20Rd,%20Alimosho,%20Lagos%20102213&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between gap-3">
+                            <div class="text-xs">
+                                <span class="font-bold text-navy-900 block">Alake Bus Stop, Ikotun - Idimu Rd</span>
+                                <span class="text-slate-500">Alimosho, Lagos 102213</span>
+                            </div>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=130+Ikotun+-+Idimu+Rd,+Alimosho,+Lagos+102213" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs px-4 py-2.5 rounded-xl transition-colors shrink-0">
+                                <i class="fa-solid fa-diamond-turn-right"></i>
+                                <span>Get Directions</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-navy-950 text-slate-400 pt-16 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <!-- Col 1: Brand & CAC -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-navy-950">
+                            <i class="fa-solid fa-bolt-lightning text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-white font-extrabold text-base leading-tight">OPITECH</div>
+                            <div class="text-[10px] text-amber-400 font-semibold uppercase">Electronics & Electrical Eng. Ltd</div>
+                        </div>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Reliable • Professional • Affordable | Available 24/7. Delivering certified electrical wiring, solar inverter setups, and wireless CCTV surveillance across Lagos State.
+                    </p>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-navy-900 border border-slate-800 text-xs text-slate-300">
+                        <i class="fa-solid fa-certificate text-amber-400"></i>
+                        <span>CAC Reg: <strong class="text-white">RC-1865509</strong></span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-amber-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Engineering Services</a></li>
+                        <li><a href="#solar-calculator" class="hover:text-amber-400 transition-colors">Solar & Inverter Calculator</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition-colors">Company Credentials</a></li>
+                        <li><a href="#reviews" class="hover:text-amber-400 transition-colors">Customer Reviews (5.0 ★)</a></li>
+                        <li><a href="#contact" class="hover:text-amber-400 transition-colors">Request Free Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Core Services -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Our Services</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>Industrial & Domestic Wiring</li>
+                        <li>Hybrid Solar & Inverter Systems</li>
+                        <li>Lithium & Tubular Battery Banks</li>
+                        <li>Wireless CCTV & Smart Security</li>
+                        <li>Commercial Distribution Boards</li>
+                        <li>24/7 Electrical Fault Maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Social -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contact & Social</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                            <span>Alake Bus Stop, 130 Ikotun - Idimu Rd, Alimosho, Lagos 102213</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <a href="tel:08022236711" class="hover:text-white">0802 223 6711</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <a href="https://wa.me/2348122263711" target="_blank" rel="noopener noreferrer" class="hover:text-white">0812 226 3711 (24/7)</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-tiktok text-amber-400"></i>
+                            <a href="https://www.tiktok.com/@opitechelectrical" target="_blank" rel="noopener noreferrer" class="hover:text-white">@opitechelectrical</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; <span id="current-year"></span> Opitech Electronics and Electrical Engineering Limited (RC-1865509). All Rights Reserved.</p>
+                <p>Alimosho, Lagos, Nigeria • Director: Alausa Ismail Opeyemi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Technical Details Modal (Accessible, No Alert) -->
+    <div id="service-modal" class="hidden fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-fadeIn">
+            <button onclick="closeServiceModal()" aria-label="Close Modal" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-badge" class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase mb-3"></div>
+            <h3 id="modal-title" class="text-2xl font-extrabold text-navy-900 mb-3"></h3>
+            <p id="modal-desc" class="text-sm text-slate-600 leading-relaxed mb-5"></p>
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-6">
+                <h4 class="text-xs font-bold uppercase text-navy-900 mb-2.5">What Opitech Delivers:</h4>
+                <ul id="modal-bullets" class="space-y-2 text-sm text-slate-700"></ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="modal-quote-btn" class="flex-1 bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3 px-5 rounded-xl text-sm transition-colors">
+                    Request Quote for This Service
+                </button>
+                <a href="tel:08122263711" class="flex-1 bg-navy-900 hover:bg-navy-800 text-white font-bold py-3 px-5 rounded-xl text-sm text-center transition-colors">
+                    <i class="fa-solid fa-phone mr-1.5 text-amber-400"></i> Call Engineer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Logic -->
+    <script>
+        // Set Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Service Modal Data & Functions
+        const serviceDetails = {
+            wiring: {
+                badge: 'Electrical Infrastructure',
+                title: 'Industrial & Residential Wiring',
+                desc: 'We execute end-to-end electrical installations adhering strictly to Nigerian NEMSA/SON wiring regulations, ensuring zero voltage drops and maximum protection against electrical fires.',
+                bullets: [
+                    'Full PVC/galvanized conduit piping and neat surface trunking',
+                    '3-Phase & Single-Phase Distribution Board assembly & labeling',
+                    'Automatic Transfer Switches (ATS) & manual changeover panels',
+                    'Copper rod earthing, surge arrestors, and thermal fault diagnostics'
+                ],
+                quoteValue: 'Industrial & Residential Wiring'
+            },
+            solar: {
+                badge: 'Renewable Power Systems',
+                title: 'Solar & Inverter Installations',
+                desc: 'Engineered to give Lagos homes, plazas, and offices uninterrupted 24-hour power while slashing generator fuel and maintenance expenses.',
+                bullets: [
+                    'Pure Sine Wave Hybrid MPPT Inverters (1.5kVA to 50kVA+)',
+                    'Wall-mounted LiFePO4 Lithium & heavy-duty Tubular batteries',
+                    'Monocrystalline Half-Cut solar panels with rust-proof aluminum rails',
+                    'Smart Wi-Fi app monitoring of battery health and solar generation'
+                ],
+                quoteValue: 'Solar & Inverter Installations'
+            },
+            cctv: {
+                badge: 'Security & Surveillance',
+                title: 'Wireless CCTV & Security Systems',
+                desc: 'Deter theft and monitor staff, visitors, and property perimeters in real time with crystal-clear night vision and zero messy cables.',
+                bullets: [
+                    'Solar-powered 4G & Wi-Fi PTZ (Pan-Tilt-Zoom) outdoor cameras',
+                    'Full-color night vision with two-way audio intercom',
+                    'Remote smartphone viewing setup for multiple family/team members',
+                    'Automated perimeter security floodlights and motion alarms'
+                ],
+                quoteValue: 'Wireless CCTV & Security Systems'
+            },
+            engineering: {
+                badge: 'Corporate & Industrial',
+                title: 'Electrical & Electronics Engineering',
+                desc: 'As a CAC-registered limited liability company (RC-1865509), Opitech partners with businesses, estates, and institutions for ongoing technical support and procurement.',
+                bullets: [
+                    'Scheduled preventative maintenance for commercial facilities',
+                    'Troubleshooting and servicing of industrial control panels',
+                    'Genuine procurement of armored cables, breakers, and solar gear',
+                    '24/7 emergency call-out support across Alimosho and Lagos'
+                ],
+                quoteValue: 'Electrical & Electronics Engineering Contracts'
+            }
+        };
+
+        function openServiceModal(key) {
+            const data = serviceDetails[key];
+            if (!data) return;
+            document.getElementById('modal-badge').textContent = data.badge;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-desc').textContent = data.desc;
+            const bulletsEl = document.getElementById('modal-bullets');
+            bulletsEl.innerHTML = data.bullets.map(item =>
+                `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-amber-500 mt-1"></i><span>${item}</span></li>`
+            ).join('');
+            document.getElementById('modal-quote-btn').onclick = () => {
+                closeServiceModal();
+                selectServiceForQuote(data.quoteValue);
+            };
+            document.getElementById('service-modal').classList.remove('hidden');
+        }
+
+        function closeServiceModal() {
+            document.getElementById('service-modal').classList.add('hidden');
+        }
+
+        // Close modal on outside click
+        document.getElementById('service-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'service-modal') closeServiceModal();
+        });
+
+        function selectServiceForQuote(serviceName) {
+            const selectEl = document.getElementById('client-service');
+            selectEl.value = serviceName;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('client-name').focus();
+        }
+
+        // Interactive Solar & Inverter Load Estimator Logic
+        const appliances = [
+            { id: 'led', name: 'LED Bulbs / Spotlights', watts: 15, icon: 'fa-lightbulb', qty: 6 },
+            { id: 'fan', name: 'Standing / Ceiling Fans', watts: 75, icon: 'fa-fan', qty: 3 },
+            { id: 'tv', name: 'LED Smart TV & Decoder', watts: 140, icon: 'fa-tv', qty: 1 },
+            { id: 'laptop', name: 'Laptops & Wi-Fi Router', watts: 90, icon: 'fa-laptop', qty: 2 },
+            { id: 'fridge', name: 'Inverter Fridge / Freezer', watts: 220, icon: 'fa-snowflake', qty: 1 },
+            { id: 'cctv', name: 'CCTV System & Security Lights', watts: 100, icon: 'fa-video', qty: 1 },
+            { id: 'ac1', name: '1HP Inverter Split AC', watts: 950, icon: 'fa-wind', qty: 0 },
+            { id: 'ac15', name: '1.5HP Inverter Split AC', watts: 1350, icon: 'fa-temperature-arrow-down', qty: 0 }
+        ];
+
+        function renderAppliances() {
+            const container = document.getElementById('appliance-list');
+            container.innerHTML = appliances.map((item, idx) => `
+                <div class="bg-navy-900/90 border ${item.qty > 0 ? 'border-amber-500/60' : 'border-slate-700'} rounded-2xl p-4 flex items-center justify-between transition-colors">
+                    <div class="flex items-center gap-3 pr-2">
+                        <div class="w-9 h-9 rounded-xl ${item.qty > 0 ? 'bg-amber-500/20 text-amber-400' : 'bg-slate-800 text-slate-400'} flex items-center justify-center shrink-0">
+                            <i class="fa-solid ${item.icon}"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white leading-tight">${item.name}</div>
+                            <div class="text-xs text-slate-400 mt-0.5">${item.watts}W each</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button type="button" onclick="updateQty(${idx}, -1)" aria-label="Decrease ${item.name}" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-bold flex items-center justify-center transition-colors">-</button>
+                        <span class="w-6 text-center text-sm font-extrabold text-amber-400">${item.qty}</span>
+                        <button type="button" onclick="updateQty(${idx}, 1)" aria-label="Increase ${item.name}" class="w-8 h-8 rounded-lg bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold flex items-center justify-center transition-colors">+</button>
+                    </div>
+                </div>
+            `).join('');
+            calculateSolarSystem();
+        }
+
+        function updateQty(index, delta) {
+            appliances[index].qty = Math.max(0, Math.min(25, appliances[index].qty + delta));
+            renderAppliances();
+        }
+
+        function resetCalculator() {
+            appliances.forEach(item => item.qty = 0);
+            renderAppliances();
+        }
+
+        let currentRecommendation = {
+            totalWatts: 0,
+            inverter: '1.5kVA / 12V Pure Sine Wave Inverter',
+            solar: '1x 220Ah Tubular Battery + 2x 450W Solar Panels'
+        };
+
+        function calculateSolarSystem() {
+            const rawWatts = appliances.reduce((sum, item) => sum + (item.watts * item.qty), 0);
+            const designWatts = Math.round(rawWatts * 1.25); // 25% safety headroom
+
+            let inverterRec = '';
+            let solarRec = '';
+
+            if (rawWatts === 0) {
+                inverterRec = 'Select appliances to begin';
+                solarRec = 'Awaiting load selection...';
+            } else if (designWatts <= 900) {
+                inverterRec = '1.5kVA / 12V Hybrid Inverter';
+                solarRec = '1x 220Ah Tubular Battery + 2x 450W Mono Solar Panels';
+            } else if (designWatts <= 2000) {
+                inverterRec = '3.5kVA / 24V Hybrid MPPT Inverter';
+                solarRec = '2x 220Ah Tubular (or 2.5kWh Lithium) + 4x 550W Solar Panels';
+            } else if (designWatts <= 3600) {
+                inverterRec = '5kVA / 48V Hybrid MPPT Inverter';
+                solarRec = '5kWh LiFePO4 Lithium Battery + 6x to 8x 550W Solar Panels';
+            } else if (designWatts <= 7500) {
+                inverterRec = '10kVA / 48V Hybrid Solar Inverter';
+                solarRec = '10kWh – 15kWh Lithium Battery Bank + 12x to 16x 550W Panels';
+            } else {
+                inverterRec = '15kVA – 30kVA+ 3-Phase Commercial Solar';
+                solarRec = 'Custom Industrial Lithium Rack + High-Capacity Roof Array (Site Audit Required)';
+            }
+
+            currentRecommendation = { totalWatts: rawWatts, inverter: inverterRec, solar: solarRec };
+
+            document.getElementById('total-watts').textContent = `${rawWatts.toLocaleString()} W`;
+            const percentage = Math.min(100, Math.round((rawWatts / 8000) * 100));
+            document.getElementById('load-bar').style.width = `${percentage}%`;
+            document.getElementById('rec-inverter').textContent = inverterRec;
+            document.getElementById('rec-solar').textContent = solarRec;
+        }
+
+        function getSelectedApplianceSummary() {
+            const active = appliances.filter(a => a.qty > 0).map(a => `${a.qty}x ${a.name}`);
+            return active.length > 0 ? active.join(', ') : 'Custom Solar Inquiry';
+        }
+
+        function sendEstimateToWhatsApp() {
+            const itemsSummary = getSelectedApplianceSummary();
+            const message = `Hello Opitech Engineering, I used your website Solar Load Estimator:\n\n• Appliances: ${itemsSummary}\n• Estimated Load: ${currentRecommendation.totalWatts}W\n• Recommended System: ${currentRecommendation.inverter}\n• Suggested Setup: ${currentRecommendation.solar}\n\nPlease share a quote and availability for installation in Lagos.`;
+            const url = `https://wa.me/2348122263711?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        function transferEstimateToForm() {
+            const itemsSummary = getSelectedApplianceSummary();
+            document.getElementById('client-service').value = 'Solar & Inverter Installations';
+            document.getElementById('client-details').value = `Solar Load Estimate (${currentRecommendation.totalWatts}W):\n- Appliances: ${itemsSummary}\n- Recommended Inverter: ${currentRecommendation.inverter}\n- Suggested Battery/Solar: ${currentRecommendation.solar}`;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('client-name').focus();
+        }
+
+        // Quote Form Submission Handlers (WhatsApp Handoff & Inline Confirmation)
+        document.getElementById('quote-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value.trim();
+            const phone = document.getElementById('client-phone').value.trim();
+            const service = document.getElementById('client-service').value;
+            const location = document.getElementById('client-location').value.trim();
+            const details = document.getElementById('client-details').value.trim();
+
+            const waMessage = `Hello Opitech Electronics & Electrical Engineering Limited,\n\nNew Quote / Inspection Request:\n• Name: ${name}\n• Phone: ${phone}\n• Service: ${service}\n• Location: ${location}\n• Details: ${details || 'N/A'}`;
+            const waUrl = `https://wa.me/2348122263711?text=${encodeURIComponent(waMessage)}`;
+
+            showFormFeedback(`Opening WhatsApp chat with <strong>Opitech 24/7 Dispatch (0812 226 3711)</strong> for <strong>${name}</strong>. If WhatsApp does not open automatically, call us directly on <strong>0802 223 6711</strong>.`);
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        });
+
+        function submitStandardForm() {
+            const name = document.getElementById('client-name').value.trim();
+            const phone = document.getElementById('client-phone').value.trim();
+            const service = document.getElementById('client-service').value;
+            const location = document.getElementById('client-location').value.trim();
+
+            if (!name || !phone || !location) {
+                showFormFeedback(`Please enter your <strong>Name</strong>, <strong>Phone Number</strong>, and <strong>Site Location</strong> so our engineer can call you back promptly.`, true);
+                return;
+            }
+
+            showFormFeedback(`Thank you, <strong>${name}</strong>! Your request for <strong>${service}</strong> at <strong>${location}</strong> has been logged. An Opitech engineer will call <strong>${phone}</strong> shortly. For immediate emergency dispatch, call <strong>0812 226 3711</strong>.`);
+        }
+
+        function showFormFeedback(htmlMsg, isWarning = false) {
+            const box = document.getElementById('form-feedback');
+            const text = document.getElementById('form-feedback-text');
+            box.className = isWarning
+                ? 'mt-5 p-4 rounded-2xl bg-amber-50 border border-amber-300 text-amber-950 text-sm flex items-start gap-3'
+                : 'mt-5 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm flex items-start gap-3';
+            text.innerHTML = htmlMsg;
+            box.classList.remove('hidden');
+        }
+
+        // Initialize Calculator on Load
+        window.addEventListener('DOMContentLoaded', renderAppliances);
+    </script>
+</body>
+</html>
