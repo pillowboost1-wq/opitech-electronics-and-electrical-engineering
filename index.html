@@ -92,7 +92,7 @@
 
                 <!-- CTA & Mobile Toggle -->
                 <div class="flex items-center gap-3">
-                    <a href="tel:08122263711" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl shadow-md hover:shadow-amber-500/25 transition-all">
+                    <a href="tel:08022263711" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl shadow-md hover:shadow-amber-500/25 transition-all">
                         <i class="fa-solid fa-phone-volume animate-bounce"></i>
                         <span>Call 24/7</span>
                     </a>
@@ -115,7 +115,7 @@
                 <a href="tel:08022236711" class="w-full text-center py-3 rounded-xl bg-navy-800 text-white font-semibold text-sm border border-slate-700">
                     <i class="fa-solid fa-phone mr-2 text-amber-400"></i> Call Primary: 0802 223 6711
                 </a>
-                <a href="https://wa.me/2348122263711" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm">
+                <a href="https://wa.me/2348022263711" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm">
                     <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp 24/7: 0812 226 3711
                 </a>
             </div>
@@ -232,7 +232,7 @@
                         </div>
 
                         <div class="mt-6 pt-5 border-t border-slate-700 flex flex-col sm:flex-row gap-3">
-                            <a href="https://wa.me/2348122263711?text=Hello%20Opitech%20Engineering%2C%20I%20would%20like%20to%20inquire%20about%20an%20electrical%2Fsolar%20project." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3.5 px-4 rounded-xl transition-colors">
+                            <a href="https://wa.me/2348022263711?text=Hello%20Opitech%20Engineering%2C%20I%20would%20like%20to%20inquire%20about%20an%20electrical%2Fsolar%20project." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3.5 px-4 rounded-xl transition-colors">
                                 <i class="fa-brands fa-whatsapp text-lg"></i>
                                 <span>Chat on WhatsApp</span>
                             </a>
@@ -736,8 +736,8 @@
                                     <a href="tel:08022236711" class="text-base font-bold text-white hover:text-amber-400 transition-colors">
                                         0802 223 6711 <span class="text-xs font-normal text-slate-400">(Primary Office)</span>
                                     </a>
-                                    <a href="tel:08122263711" class="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors">
-                                        0812 226 3711 <span class="text-xs font-normal text-slate-400">(24/7 Emergency & WhatsApp)</span>
+                                    <a href="tel:08022263711" class="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors">
+                                        0802 226 3711 <span class="text-xs font-normal text-slate-400">(24/7 Emergency & WhatsApp)</span>
                                     </a>
                                 </div>
                             </div>
@@ -850,7 +850,7 @@
                         </li>
                         <li class="flex items-center gap-2.5">
                             <i class="fa-brands fa-whatsapp text-emerald-400"></i>
-                            <a href="https://wa.me/2348122263711" target="_blank" rel="noopener noreferrer" class="hover:text-white">0812 226 3711 (24/7)</a>
+                            <a href="https://wa.me/2348022263711" target="_blank" rel="noopener noreferrer" class="hover:text-white">0812 226 3711 (24/7)</a>
                         </li>
                         <li class="flex items-center gap-2.5">
                             <i class="fa-brands fa-tiktok text-amber-400"></i>
@@ -1086,7 +1086,7 @@
         function sendEstimateToWhatsApp() {
             const itemsSummary = getSelectedApplianceSummary();
             const message = `Hello Opitech Engineering, I used your website Solar Load Estimator:\n\n• Appliances: ${itemsSummary}\n• Estimated Load: ${currentRecommendation.totalWatts}W\n• Recommended System: ${currentRecommendation.inverter}\n• Suggested Setup: ${currentRecommendation.solar}\n\nPlease share a quote and availability for installation in Lagos.`;
-            const url = `https://wa.me/2348122263711?text=${encodeURIComponent(message)}`;
+            const url = `https://wa.me/2348022263711?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank', 'noopener,noreferrer');
         }
 
@@ -1108,7 +1108,7 @@
             const details = document.getElementById('client-details').value.trim();
 
             const waMessage = `Hello Opitech Electronics & Electrical Engineering Limited,\n\nNew Quote / Inspection Request:\n• Name: ${name}\n• Phone: ${phone}\n• Service: ${service}\n• Location: ${location}\n• Details: ${details || 'N/A'}`;
-            const waUrl = `https://wa.me/2348122263711?text=${encodeURIComponent(waMessage)}`;
+            const waUrl = `https://wa.me/2348022263711?text=${encodeURIComponent(waMessage)}`;
 
             showFormFeedback(`Opening WhatsApp chat with <strong>Opitech 24/7 Dispatch (0812 226 3711)</strong> for <strong>${name}</strong>. If WhatsApp does not open automatically, call us directly on <strong>0802 223 6711</strong>.`);
             window.open(waUrl, '_blank', 'noopener,noreferrer');
